@@ -19,8 +19,7 @@ const App = () => {
         }) 
         .then(response => {
              console.log("response",response.data.Search)
-             setMovie(response.data.Search)
-             setSearch("")
+             setMovieList(response.data.Search)
         })
         .catch(err => console.log(err))
     
@@ -38,7 +37,7 @@ const App = () => {
           movie ? (
             <ul>
                 {
-                  movie.map(value =>(
+                  movieList.map(value =>(
                     <li>
                       <h2>{value.Title}</h2>
                       <img src={value.Poster}  alt={value.Title}/>
