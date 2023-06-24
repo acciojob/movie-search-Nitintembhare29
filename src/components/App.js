@@ -45,7 +45,8 @@ const App = () => {
                   ))
                 }
             </ul>
-          ): (<h2 className="error"> Invalid movie name. Please try again.</h2>)
+          )
+          : (<h2 className="error"> Invalid movie name. Please try again.</h2>)
          }
     </div>
   )
